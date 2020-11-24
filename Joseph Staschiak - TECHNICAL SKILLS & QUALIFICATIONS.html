@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<!-- saved from url=(0075)https://josephstaschiak.myportfolio.com/technical-skills-and-qualifications -->
+<html lang="en-US" class="wf-fbft-n4-active wf-fbft-n5-active wf-fbft-n7-active wf-active"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script type="text/javascript" src="./Joseph Staschiak - TECHNICAL SKILLS &amp; QUALIFICATIONS_files/e7fb1b89a0"></script><script src="./Joseph Staschiak - TECHNICAL SKILLS &amp; QUALIFICATIONS_files/nr-1184.min.js.download"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"e7fb1b89a0",applicationID:"750147145"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,y=["click","keydown","mousedown","pointerdown","touchstart"];y.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?f(e,c,o):o()}function n(n,r,i,o){if(!p.aborted||o){e&&e(n,r,i);for(var a=t(i),c=v(n),f=c.length,u=0;u<f;u++)c[u].apply(a,r);var d=s[w[n]];return d&&d.push([b,n,r,a]),a}}function l(e,t){h[e]=v(e).concat(t)}function m(e,t){var n=h[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return h[e]||[]}function g(e){return d[e]=d[e]||i(n)}function y(e,t){u(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var h={},w={},b={on:l,addEventListener:l,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:y,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var c="nr@context",f=e("gos"),u=e(6),s={},d={},p=t.exports=i();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!E++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(h,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var y=""+location,h={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1184.min.js"},w=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:y,features:{},xhrWrappable:w,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var E=0},{}],"wrap-function":[function(e,t,n){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(7),a="nr@original",c=Object.prototype.hasOwnProperty,f=!1;t.exports=function(e,t){function n(e,t,n,i){function nrWrapper(){var r,a,c,f;try{a=this,r=o(arguments),c="function"==typeof n?n(r,a):n||{}}catch(u){p([u,"",[r,a,i],c])}s(t+"start",[r,a,i],c);try{return f=e.apply(a,r)}catch(d){throw s(t+"err",[r,a,d],c),d}finally{s(t+"end",[r,a,f],c)}}return r(e)?e:(t||(t=""),nrWrapper[a]=e,d(e,nrWrapper),nrWrapper)}function u(e,t,i,o){i||(i="");var a,c,f,u="-"===i.charAt(0);for(f=0;f<t.length;f++)c=t[f],a=e[c],r(a)||(e[c]=n(a,u?c+i:i,o,c))}function s(n,r,i){if(!f||t){var o=f;f=!0;try{e.emit(n,r,i,t)}catch(a){p([a,n,r,i])}f=o}}function d(e,t){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(e);return n.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(r){p([r])}for(var i in e)c.call(e,i)&&(t[i]=e[i]);return t}function p(t){try{e.emit("internal-error",t)}catch(n){}}return e||(e=i),n.inPlace=u,n.flag=a,n}},{}]},{},["loader"]);</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="Computer program experience and certifications which are relative to my major">
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:site" content="@AdobePortfolio">
+      <meta property="og:title" content="Joseph Staschiak - TECHNICAL SKILLS &amp; QUALIFICATIONS">
+      <meta property="og:description" content="Computer program experience and certifications which are relative to my major">
+      <meta property="og:image" content="https://pro2-bar-s3-cdn-cf2.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/3cab993c-ac89-440f-aa31-91302e49f049_rwc_0x0x780x996x780.jpg?h=25f5fcb5e666600894f7651ce0651bfe">
+      <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAADUExURUxpcU3H2DoAAAABdFJOUwBA5thmAAAADElEQVQI12NgIA0AAAAwAAHHqoWOAAAAAElFTkSuQmCC">
+        <link rel="apple-touch-icon" href="https://pro2-bar-s3-cdn-cf2.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/3dfeaa4b-c639-4218-be22-cc7e58039a89_carw_1x1x180.jpg?h=285a5214baa87ac591e6d9903745fb2c">
+      <link rel="stylesheet" href="./Joseph Staschiak - TECHNICAL SKILLS &amp; QUALIFICATIONS_files/main.css" type="text/css">
+      <link rel="stylesheet" href="./Joseph Staschiak - TECHNICAL SKILLS &amp; QUALIFICATIONS_files/717829a48b5fad64747b7bf2f577ae731605833593.css" type="text/css">
+    <link rel="canonical" href="https://josephstaschiak.myportfolio.com/technical-skills-and-qualifications">
+      <title>Joseph Staschiak - TECHNICAL SKILLS &amp; QUALIFICATIONS</title>
+    <script type="text/javascript" src="./Joseph Staschiak - TECHNICAL SKILLS &amp; QUALIFICATIONS_files/k5fcb66NzLpnlQObBCv5STM-yVitxgiEajAOiBt0m8vfen3gfHYEBsJzwD9oFDIDWhJhZ2bX5QqoFQByFeIhjQ8KjhJuZRSoZRSXjRgywAIuw2ZRw2Mawej-mkG0dW83da4XZcNC-Av0jhNlOfG0SY4zwKuh.download" async="" onload="
+    try {
+      window.Typekit.load();
+    } catch (e) {
+      console.warn(&#39;Typekit not loaded.&#39;);
+    }
+    "></script><style type="text/css">@font-face{font-family:fbft;src:url(https://use.typekit.net/af/9cb78a/0000000000000000000118ad/27/l?subset_id=2&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/9cb78a/0000000000000000000118ad/27/d?subset_id=2&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/9cb78a/0000000000000000000118ad/27/a?subset_id=2&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-display:auto;}@font-face{font-family:fbft;src:url(https://use.typekit.net/af/2e6f07/000000000000000000011ce6/27/l?subset_id=2&fvd=n5&v=3) format("woff2"),url(https://use.typekit.net/af/2e6f07/000000000000000000011ce6/27/d?subset_id=2&fvd=n5&v=3) format("woff"),url(https://use.typekit.net/af/2e6f07/000000000000000000011ce6/27/a?subset_id=2&fvd=n5&v=3) format("opentype");font-weight:500;font-style:normal;font-display:auto;}@font-face{font-family:fbft;src:url(https://use.typekit.net/af/b825af/0000000000000000000118b1/27/l?subset_id=2&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/b825af/0000000000000000000118b1/27/d?subset_id=2&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/b825af/0000000000000000000118b1/27/a?subset_id=2&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-display:auto;}</style>
+<style type="text/css"></style></head>
+  <body class="has-touch link-transition disable-download">  <div class="page-background-video page-background-video-with-panel">
+  </div>
+  <div class="js-responsive-nav">
+    <div class="responsive-nav has-social">
+      <div class="responsive-nav__contents">
+        <div class="close-responsive-click-area js-close-responsive-nav">
+          <div class="close-responsive-button"></div>
+        </div>
+            <nav class="nav-container" data-hover-hint="nav" data-hover-hint-placement="bottom-start">
+      <div class="page-title">
+        <a href="https://josephstaschiak.myportfolio.com/lessons-learnt-1">Lessons Learnt</a>
+      </div>
+      <div class="page-title">
+        <a href="https://josephstaschiak.myportfolio.com/welcome">Welcome!</a>
+      </div>
+                <div class="gallery-title"><a href="https://josephstaschiak.myportfolio.com/home">Portfolio Home</a></div>
+      <div class="page-title">
+        <a href="https://josephstaschiak.myportfolio.com/contact">Contact</a>
+      </div>
+            </nav>
+          <div class="social pf-nav-social" data-context="theme.nav" data-hover-hint="navSocialIcons" data-hover-hint-placement="bottom-start">
+            <ul>
+            </ul>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="site-wrap cfix">
+    <div class="site-container">
+      <div class="site-content e2e-site-content">
+          <header class="site-header js-site-header " data-context="theme.nav" data-hover-hint="nav" data-hover-hint-placement="top-start">
+              <nav class="nav-container" data-hover-hint="nav" data-hover-hint-placement="bottom-start">
+      <div class="page-title">
+        <a href="https://josephstaschiak.myportfolio.com/lessons-learnt-1">Lessons Learnt</a>
+      </div>
+      <div class="page-title">
+        <a href="https://josephstaschiak.myportfolio.com/welcome">Welcome!</a>
+      </div>
+                <div class="gallery-title"><a href="https://josephstaschiak.myportfolio.com/home">Portfolio Home</a></div>
+      <div class="page-title">
+        <a href="https://josephstaschiak.myportfolio.com/contact">Contact</a>
+      </div>
+              </nav>
+              <div class="logo-wrap" data-context="theme.logo.header" data-hover-hint="logo" data-hover-hint-placement="bottom-start">
+                <div class="logo e2e-site-logo-text logo-text  ">
+                    <a href="https://josephstaschiak.myportfolio.com/home" class="preserve-whitespace">JOSEPH JACOB STASCHIAK</a>
+
+                </div>
+              </div>
+              <div class="social pf-nav-social" data-context="theme.nav" data-hover-hint="navSocialIcons" data-hover-hint-placement="bottom-start">
+                <ul>
+                </ul>
+              </div>
+              <div class="hamburger-click-area js-hamburger">
+                <div class="hamburger">
+                  <i></i>
+                  <i></i>
+                  <i></i>
+                </div>
+              </div>
+          </header>
+        <main>
+  <div class="page-container js-site-wrap" data-context="page.page.container" data-hover-hint="pageContainer">
+    <section class="page standard-modules">
+        <header class="page-header content" data-context="pages" data-identity="id:p5f5d002b8b0270cdd87af88c3220b129bdf8e25777ab4a4f2b133" data-hover-hint="pageHeader" data-hover-hint-id="p5f5d002b8b0270cdd87af88c3220b129bdf8e25777ab4a4f2b133">
+            <h1 class="title preserve-whitespace e2e-site-logo-text">TECHNICAL SKILLS &amp; QUALIFICATIONS</h1>
+            <p class="description">Computer program experience and certifications which are relative to my major</p>
+        </header>
+      <div class="page-content js-page-content" data-context="pages" data-identity="id:p5f5d002b8b0270cdd87af88c3220b129bdf8e25777ab4a4f2b133">
+        <div id="project-canvas" class="js-project-modules modules content">
+          <div id="project-modules">
+              
+              
+              
+              
+              
+              <div class="project-module module text project-module-text align- js-project-module e2e-site-project-module-text" style="  padding-top: 0px;
+  padding-bottom: 40px;
+  width: 100%;
+  max-width: 800px;
+  float: center;
+  clear: both;
+">
+  <div class="rich-text js-text-editable module-text"><div>Cameo SysML - Model Based System Engineering (MBSE)</div><div>ABAQUS - Finite Element Analysis (FEA)</div><div>SolidWorks - Design</div><div>Fluent - Computational Fluid Dynamics (CFD)</div><div>MatLab - Computer Programming Language</div><div>Python - Computer Programming Language</div><div>Microsoft Office and&nbsp;Macros</div><div>Revit and AutoCAD - Building Information Modeling (BIM)</div><div><br></div></div>
+</div>
+
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              <div class="project-module module tree project-module-tree js-js-project-module e2e-site-project-module-tree">
+  <div class="tree-wrapper valign-top">
+      <div class="tree-child-wrapper" style="flex: 1">
+        
+        <div class="project-module module image project-module-image js-js-project-module" style="  padding-top: 0px;
+  padding-bottom: 20px;
+  width: 58%;
+  float: center;
+  clear: both;
+">
+
+  
+
+  
+     <div class="js-lightbox lightbox-link" data-src="https://pro2-bar-s3-cdn-cf3.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/e2e14a30-7f62-46a6-82dc-52d49e7fe920.JPG?h=a2d4cdd7c9498f27150dd7b92bb8ffa5">
+           <img class="js-lazy e2e-site-project-module-image image-loaded" src="./Joseph Staschiak - TECHNICAL SKILLS &amp; QUALIFICATIONS_files/e2e14a30-7f62-46a6-82dc-52d49e7fe920_rw_1200.JPG" width="1031" srcset="https://pro2-bar-s3-cdn-cf3.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/e2e14a30-7f62-46a6-82dc-52d49e7fe920_rw_600.JPG?h=1896ae0ed69a59fbb7a72010cd7d11df 600w,https://pro2-bar-s3-cdn-cf3.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/e2e14a30-7f62-46a6-82dc-52d49e7fe920_rw_1200.JPG?h=56b3e2550bb41e4f3d95f88d4577727c 1031w," sizes="(max-width: 1031px) 100vw, 1031px">
+     </div>
+  
+
+</div>
+
+        
+        
+        
+        
+        
+        
+        
+      </div>
+      <div class="tree-child-wrapper" style="flex: 1">
+        
+        
+        
+        
+        
+        <div class="project-module module text project-module-text align- js-project-module e2e-site-project-module-text">
+  <div class="rich-text js-text-editable module-text"><div>CERTIFICATES</div><div>Python Programming - Automate the Boring Stuff by UDemy</div><div>Rolls-Royce Lean Six Sigma Yellow Belt<br></div><div>Aircraft engine (AE3007) Line Maintenance and Familiarization Course</div><div>Eagle Scout Recognition</div><div>OMG-Certificed Professional MBSE (In Progess)<br></div></div>
+</div>
+
+        
+        
+        
+      </div>
+  </div>
+</div>
+
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              <div class="project-module module tree project-module-tree js-js-project-module e2e-site-project-module-tree">
+  <div class="tree-wrapper valign-top">
+      <div class="tree-child-wrapper" style="flex: 1">
+        
+        <div class="project-module module image project-module-image js-js-project-module" style="  padding-top: 0px;
+  padding-bottom: 20px;
+  width: 90%;
+  float: center;
+  clear: both;
+">
+
+  
+
+  
+     <div class="js-lightbox lightbox-link" data-src="https://pro2-bar-s3-cdn-cf5.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/63b7466f-8d65-456b-97f4-800a1e1f2bb3.jpg?h=cb13e4f2a93a5e99069a48ef4729ca50">
+           <img class="js-lazy e2e-site-project-module-image image-loaded" src="./Joseph Staschiak - TECHNICAL SKILLS &amp; QUALIFICATIONS_files/63b7466f-8d65-456b-97f4-800a1e1f2bb3_rw_1200.jpg" width="670" srcset="https://pro2-bar-s3-cdn-cf5.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/63b7466f-8d65-456b-97f4-800a1e1f2bb3_rw_600.jpg?h=780447a5fcf1c07887278b7aee35924f 600w,https://pro2-bar-s3-cdn-cf5.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/63b7466f-8d65-456b-97f4-800a1e1f2bb3_rw_1200.jpg?h=5f52379eb1acdac58676c7ec8c760846 670w," sizes="(max-width: 670px) 100vw, 670px">
+     </div>
+  
+
+</div>
+
+        
+        
+        
+        
+        
+        
+        
+      </div>
+      <div class="tree-child-wrapper" style="flex: 1">
+        
+        
+        
+        
+        
+        <div class="project-module module text project-module-text align- js-project-module e2e-site-project-module-text">
+  <div class="rich-text js-text-editable module-text"><div>Cameo SysML - Model Based System Engineering (MBSE)<br></div><div>I become highly proficient in Model Based System Engineering (MBSE)&nbsp; while I was a System Design Integration (SDI) Engineer, a subset of System Engineering, at Rolls-Royce North America during Summer 2020. While on the SDI team, I developed and assigned system requirements for Army, Future Vertical Lift using Cameo SysML MBSE. Additionally, I was responsible for designing mechanical subsystem structure for first time in company MBSE history. As a side project, I used MBSE developed a transportation system from scratch. During which, and held&nbsp;interactions with Army and airframe customer to determine the product transportation system.<br></div><div><br></div><div>Skill Level: Highly Proficient</div></div>
+</div>
+
+        
+        
+        
+      </div>
+  </div>
+</div>
+
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              <div class="project-module module tree project-module-tree js-js-project-module e2e-site-project-module-tree">
+  <div class="tree-wrapper valign-top">
+      <div class="tree-child-wrapper" style="flex: 1">
+        
+        
+        
+        
+        
+        
+        
+        <div class="project-module module media_collection project-module-media_collection" data-id="m5f5d05a719f917f120fce068c3412b5ea3214fcd8a6e06da1614a" style="  padding-top: 0px;
+  padding-bottom: 40px;
+  width: 100%;
+">
+  <div class="grid--main js-grid-main grid--ready">
+    <div class="grid__item-container js-grid-item-container lightbox-link hoverable" data-flex-grow="462.22222222222" style="width: 231.111px; flex-grow: 231.111;" data-width="1280" data-height="720">
+      <script type="text/html" class="js-lightbox-slide-content">
+        <div class="grid__image-wrapper">
+          <img src="https://pro2-bar-s3-cdn-cf2.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/363b631b-96f8-4d5a-b2f6-f755a9947bf3_rw_1920.jpg?h=eb8611a4b097d8fab78a740c2cc36c3e" srcset="https://pro2-bar-s3-cdn-cf2.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/363b631b-96f8-4d5a-b2f6-f755a9947bf3_rw_600.jpg?h=2bf6560d5822d8135aea604ace621d06 600w,https://pro2-bar-s3-cdn-cf2.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/363b631b-96f8-4d5a-b2f6-f755a9947bf3_rw_1200.jpg?h=489f3a88be9d0083c8c1c507d7f5e590 1200w,https://pro2-bar-s3-cdn-cf2.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/363b631b-96f8-4d5a-b2f6-f755a9947bf3_rw_1920.jpg?h=eb8611a4b097d8fab78a740c2cc36c3e 1280w,"  sizes="(max-width: 1280px) 100vw, 1280px">
+        <div>
+      </script>
+      <img class="grid__item-image js-grid__item-image grid__item-image-lazy js-lazy image-loaded" src="./Joseph Staschiak - TECHNICAL SKILLS &amp; QUALIFICATIONS_files/363b631b-96f8-4d5a-b2f6-f755a9947bf3_rw_1920.jpg" sizes="572px" srcset="https://pro2-bar-s3-cdn-cf2.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/363b631b-96f8-4d5a-b2f6-f755a9947bf3_rw_600.jpg?h=2bf6560d5822d8135aea604ace621d06 600w,https://pro2-bar-s3-cdn-cf2.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/363b631b-96f8-4d5a-b2f6-f755a9947bf3_rw_1200.jpg?h=489f3a88be9d0083c8c1c507d7f5e590 1200w,https://pro2-bar-s3-cdn-cf2.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/363b631b-96f8-4d5a-b2f6-f755a9947bf3_rw_1920.jpg?h=eb8611a4b097d8fab78a740c2cc36c3e 1280w,">
+      <span class="grid__item-filler" style="padding-bottom:56.25%;"></span>
+    </div>
+    <div class="js-grid-spacer" style="display: none;"></div>
+  </div>
+</div>
+
+        
+      </div>
+      <div class="tree-child-wrapper" style="flex: 1">
+        
+        
+        
+        
+        
+        <div class="project-module module text project-module-text align- js-project-module e2e-site-project-module-text">
+  <div class="rich-text js-text-editable module-text"><div>ABAQUS - Finite Element Analysis (FEA)</div><div>I became highly proficient in Finite Element Analysis while I was performing research for Ford Automotive and Ohio State University. The fold of my research was to quantify a friction parameter for Ford which would better allow their NASCAR teams to navigate the track.</div><div><br></div><div>During my research I performed 2D and 3D analysis simulations on different road surfaces to develop a correlation between the contact area between the tire and road and the yield strain energy. My results proved to be invaluable as we were able to identify 25% contact area percentage. While we were previously looking at contact area between 5-90%, my findings reduced the window to 23-27% thus creating more accurate and result producing data.</div><div>Skill Level: Highly Proficient<br></div></div>
+</div>
+
+        
+        
+        
+      </div>
+  </div>
+</div>
+
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              <div class="project-module module tree project-module-tree js-js-project-module e2e-site-project-module-tree">
+  <div class="tree-wrapper valign-top">
+      <div class="tree-child-wrapper" style="flex: 1">
+        
+        <div class="project-module module image project-module-image js-js-project-module" style="  padding-top: px;
+  padding-bottom: px;
+">
+
+  
+
+  
+     <div class="js-lightbox lightbox-link" data-src="https://pro2-bar-s3-cdn-cf.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/8bbaaded-4ed3-4e82-a153-63c5c7ec54f0.png?h=05034a57c7fff964874675dcfe485e5e">
+           <img class="js-lazy e2e-site-project-module-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://pro2-bar-s3-cdn-cf.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/8bbaaded-4ed3-4e82-a153-63c5c7ec54f0_rw_1200.png?h=8876d9525334855b312f2eb6b5325c45" data-srcset="https://pro2-bar-s3-cdn-cf.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/8bbaaded-4ed3-4e82-a153-63c5c7ec54f0_rw_600.png?h=383bf422461f0407eac392457cd53f77 600w,https://pro2-bar-s3-cdn-cf.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/8bbaaded-4ed3-4e82-a153-63c5c7ec54f0_rw_1200.png?h=8876d9525334855b312f2eb6b5325c45 690w," data-sizes="(max-width: 690px) 100vw, 690px" width="690" height="0" style="padding-bottom: 61.83%; background: rgba(0, 0, 0, 0.03)">
+     </div>
+  
+
+</div>
+
+        
+        
+        
+        
+        
+        
+        
+      </div>
+      <div class="tree-child-wrapper" style="flex: 1">
+        
+        
+        
+        
+        
+        <div class="project-module module text project-module-text align- js-project-module e2e-site-project-module-text">
+  <div class="rich-text js-text-editable module-text"><div>SolidWorks - Design</div><div><br></div><div>Through Ohio State University and OSU ChemE Car Club I have had increasing exposure to modeling and design software throughout the last 5 years. While being taught to use SolidWorks in the OSU classroom, I become so efficient that I was asked to be the Teaching Assistant (TA) for that very class I was in. I learned not only how to make the part and manipulate fast design strategies, but I also learned how&nbsp;a designer should think when it comes to considering manufacturing, design restrictions, and&nbsp;innovative solutions.</div><div>While with OSU ChemE Car Club on the chassis design team, I was responsible for developing a casing over the gearbox. Aspects which i considered included, weight, safety of gearbox, safety of engineers, maintenance, aerodynamics.&nbsp;</div><div><br></div><div>Solidworks Skill: Proficient</div><div>NX Skill: Minimal</div><div>Experience is about to expand as my current research role will use NX to transfer designs from modeling into analysis.</div></div>
+</div>
+
+        
+        
+        
+      </div>
+  </div>
+</div>
+
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              <div class="project-module module tree project-module-tree js-js-project-module e2e-site-project-module-tree">
+  <div class="tree-wrapper valign-top">
+      <div class="tree-child-wrapper" style="flex: 1">
+        
+        <div class="project-module module image project-module-image js-js-project-module" style="  padding-top: px;
+  padding-bottom: px;
+">
+
+  
+
+  
+     <div class="js-lightbox lightbox-link" data-src="https://pro2-bar-s3-cdn-cf3.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/e5c6afa9-6744-4dd5-a2cf-5b3f359bb828.jpg?h=4789f4bf43cf8da37e635263ef967683">
+           <img class="js-lazy e2e-site-project-module-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://pro2-bar-s3-cdn-cf3.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/e5c6afa9-6744-4dd5-a2cf-5b3f359bb828_rw_600.jpg?h=1a4a215739a33a7932e36b31e3607896" data-srcset="https://pro2-bar-s3-cdn-cf3.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/e5c6afa9-6744-4dd5-a2cf-5b3f359bb828_rw_600.jpg?h=1a4a215739a33a7932e36b31e3607896 261w," data-sizes="(max-width: 261px) 100vw, 261px" width="261" height="0" style="padding-bottom: 73.95%; background: rgba(0, 0, 0, 0.03)">
+     </div>
+  
+
+</div>
+
+        
+        
+        
+        
+        
+        
+        
+      </div>
+      <div class="tree-child-wrapper" style="flex: 1">
+        
+        
+        
+        
+        
+        <div class="project-module module text project-module-text align- js-project-module e2e-site-project-module-text">
+  <div class="rich-text js-text-editable module-text"><div>Fluent - Computational Fluid Dynamics (CFD)</div><div>This is a skill which I am currently learning for my recently acquired position as Aerothermodynamics Research Assistant at Ohio State. Were are using experiements and CFD to investigate film cooling, flow control, and turbine deposition. The goal is to use this analysis to improve designs in real-life aerospace applications.</div><div>CFD Skill: Beginner/Intermediate</div></div>
+</div>
+
+        
+        
+        
+      </div>
+  </div>
+</div>
+
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              <div class="project-module module tree project-module-tree js-js-project-module e2e-site-project-module-tree">
+  <div class="tree-wrapper valign-center">
+      <div class="tree-child-wrapper" style="flex: 1">
+        
+        <div class="project-module module image project-module-image js-js-project-module" style="  padding-top: px;
+  padding-bottom: px;
+">
+
+  
+
+  
+     <div class="js-lightbox lightbox-link" data-src="https://pro2-bar-s3-cdn-cf2.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/3707b1c0-85de-42dc-a810-89b70e447934.jpg?h=61a76613325d4c25e87ae5254799ab9b">
+           <img class="js-lazy e2e-site-project-module-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://pro2-bar-s3-cdn-cf2.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/3707b1c0-85de-42dc-a810-89b70e447934_rw_1920.jpg?h=3d7f9474ae532f98c9ab8141e0d281d4" data-srcset="https://pro2-bar-s3-cdn-cf2.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/3707b1c0-85de-42dc-a810-89b70e447934_rw_600.jpg?h=0c5eab117a1e21a1b71443175fda3037 600w,https://pro2-bar-s3-cdn-cf2.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/3707b1c0-85de-42dc-a810-89b70e447934_rw_1200.jpg?h=a9a88a85089733ec4e3b93f276d4cae9 1200w,https://pro2-bar-s3-cdn-cf2.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/3707b1c0-85de-42dc-a810-89b70e447934_rw_1920.jpg?h=3d7f9474ae532f98c9ab8141e0d281d4 1280w," data-sizes="(max-width: 1280px) 100vw, 1280px" width="1280" height="0" style="padding-bottom: 56.17%; background: rgba(0, 0, 0, 0.03)">
+     </div>
+  
+
+</div>
+
+        
+        
+        
+        
+        
+        
+        
+      </div>
+      <div class="tree-child-wrapper" style="flex: 1">
+        
+        
+        
+        
+        
+        <div class="project-module module text project-module-text align- js-project-module e2e-site-project-module-text">
+  <div class="rich-text js-text-editable module-text"><div>MatLab - Computer Programming Language</div><div>Python - Computer Programming Language</div><div><br></div><div>Through&nbsp;Ohio State academic calendar, there are 6+ courses which are heavily dependent on MatLab and you cannot succeed without MatLab&nbsp;experience and understanding. Due to these courses&nbsp;and using MatLab for automation purposes at Rolls-Royce, I have become skilled in this computer language.</div><div><br></div><div>As for Python programming, this is something which I learned on my own. Mechanical Engineering at Ohio State places an emphasis on manufacturing. While that is good and I now&nbsp;have great strength in manufacturing, I found myself with the weakness in programming (outside of MatLab). I took it upon myself during COVID-19 to spend my excess time inside improving this weakness into a strength; thus making me a double threat of manufacturing an programming. Refer to the certification section to view my received a Python Certificate&nbsp;where I spent 50+ hours programming. I have also had experience using Visual Basic Application (VBA) Macros to automate excel files.</div><div><br></div><div>MatLab Skill: Proficient</div><div>Python Skill: Intermediate, Certification Received</div><div>Macros Skill: Beginner</div></div>
+</div>
+
+        
+        
+        
+      </div>
+  </div>
+</div>
+
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              <div class="project-module module tree project-module-tree js-js-project-module e2e-site-project-module-tree">
+  <div class="tree-wrapper valign-top">
+      <div class="tree-child-wrapper" style="flex: 1">
+        
+        <div class="project-module module image project-module-image js-js-project-module" style="  padding-top: 0px;
+  padding-bottom: 20px;
+  width: 60%;
+  float: center;
+  clear: both;
+">
+
+  
+
+  
+     <div class="js-lightbox lightbox-link" data-src="https://pro2-bar-s3-cdn-cf.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/89182083-3b47-481f-b9df-4f21b78037d9.jpg?h=b110460222dcd8d8ac5ed9d9c203ea42">
+           <img class="js-lazy e2e-site-project-module-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://pro2-bar-s3-cdn-cf.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/89182083-3b47-481f-b9df-4f21b78037d9_rw_1920.jpg?h=b324314c4edf1faa70a29b21757227ea" data-srcset="https://pro2-bar-s3-cdn-cf.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/89182083-3b47-481f-b9df-4f21b78037d9_rw_600.jpg?h=e18fcbaae26da98e97ce7768b4f13190 600w,https://pro2-bar-s3-cdn-cf.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/89182083-3b47-481f-b9df-4f21b78037d9_rw_1200.jpg?h=67ff7d0bfe639d0e9bf15f7760a61039 1200w,https://pro2-bar-s3-cdn-cf.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/89182083-3b47-481f-b9df-4f21b78037d9_rw_1920.jpg?h=b324314c4edf1faa70a29b21757227ea 1540w," data-sizes="(max-width: 1540px) 100vw, 1540px" width="1540" height="0" style="padding-bottom: 51.83%; background: rgba(0, 0, 0, 0.03)">
+     </div>
+  
+
+</div>
+
+        
+        
+        
+        
+        
+        
+        
+      </div>
+      <div class="tree-child-wrapper" style="flex: 1">
+        
+        
+        
+        
+        
+        <div class="project-module module text project-module-text align- js-project-module e2e-site-project-module-text">
+  <div class="rich-text js-text-editable module-text"><div>Revit and AutoCAD - Building Information Modeling (BIM)</div><div>I became highly proficient in Revit and AutoCAD BIM as I was the lead mechanical designer for a project with a $500,000 budget. During this project I lead the design of the mechanical systems of corporate buildings while also interacting with electric engineers, the customers, and outside contractors.</div><div>Revit and AutoCAD: Proficient</div></div>
+</div>
+
+        
+        
+        
+      </div>
+  </div>
+</div>
+
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              <div class="project-module module tree project-module-tree js-js-project-module e2e-site-project-module-tree">
+  <div class="tree-wrapper valign-top">
+      <div class="tree-child-wrapper" style="flex: 1">
+        
+        <div class="project-module module image project-module-image js-js-project-module" style="  padding-top: px;
+  padding-bottom: px;
+">
+
+  
+
+  
+     <div class="js-lightbox lightbox-link" data-src="https://pro2-bar-s3-cdn-cf2.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/d1c10d0a-fd9c-4bf2-82b1-28cf2aff8598.png?h=230e51b133b714b4e90c6d5b43e5dfbf">
+           <img class="js-lazy e2e-site-project-module-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://pro2-bar-s3-cdn-cf2.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/d1c10d0a-fd9c-4bf2-82b1-28cf2aff8598_rw_600.png?h=c8682ec0965e61e73b6b503441b467ca" data-srcset="https://pro2-bar-s3-cdn-cf2.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/d1c10d0a-fd9c-4bf2-82b1-28cf2aff8598_rw_600.png?h=c8682ec0965e61e73b6b503441b467ca 299w," data-sizes="(max-width: 299px) 100vw, 299px" width="299" height="0" style="padding-bottom: 56.19%; background: rgba(0, 0, 0, 0.03)">
+     </div>
+  
+
+</div>
+
+        
+        
+        
+        
+        
+        
+        
+      </div>
+      <div class="tree-child-wrapper" style="flex: 1">
+        
+        
+        
+        
+        
+        <div class="project-module module text project-module-text align- js-project-module e2e-site-project-module-text">
+  <div class="rich-text js-text-editable module-text"><div>Microsoft Office: Highly Proficient on all platforms. Experience with Macros.</div></div>
+</div>
+
+        
+        
+        
+      </div>
+  </div>
+</div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+          <section class="other-projects" data-context="page.page.other_pages" data-hover-hint="otherPages">
+            <div class="title-wrapper">
+              <div class="title-container">
+                  <h3 class="other-projects-title preserve-whitespace">You may also like</h3>
+              </div>
+            </div>
+            <div class="project-covers">
+                  <a class="project-cover js-project-cover-touch hold-space" href="https://josephstaschiak.myportfolio.com/engineering-projects" data-context="pages" data-identity="id:p5f5bd85fcd842d421d08ab3a303d8329884ea1dc4b94dec2c251b">
+                      <div class="cover-image-wrap">
+                        <div class="cover-image">
+                            <div class="cover cover-normal">
+
+            <img class="cover__img js-lazy" src="./Joseph Staschiak - TECHNICAL SKILLS &amp; QUALIFICATIONS_files/ba84ac54-77f6-498b-8c41-275a8bad87a2_rwc_42x0x662x497x32.jpg" data-src="https://pro2-bar-s3-cdn-cf.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/ba84ac54-77f6-498b-8c41-275a8bad87a2_rwc_42x0x662x497x662.jpg?h=d1ab0173e711d93ab09c5345c26a9ec0" data-srcset="https://pro2-bar-s3-cdn-cf.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/ba84ac54-77f6-498b-8c41-275a8bad87a2_rwc_42x0x662x497x640.jpg?h=16e3ad8a57bcdd9b48acceba957e903f 640w, https://pro2-bar-s3-cdn-cf.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/ba84ac54-77f6-498b-8c41-275a8bad87a2_rwc_42x0x662x497x662.jpg?h=d1ab0173e711d93ab09c5345c26a9ec0 1280w, https://pro2-bar-s3-cdn-cf.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/ba84ac54-77f6-498b-8c41-275a8bad87a2_rwc_42x0x662x497x662.jpg?h=d1ab0173e711d93ab09c5345c26a9ec0 1366w, https://pro2-bar-s3-cdn-cf.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/ba84ac54-77f6-498b-8c41-275a8bad87a2_rwc_42x0x662x497x662.jpg?h=d1ab0173e711d93ab09c5345c26a9ec0 1920w, https://pro2-bar-s3-cdn-cf.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/ba84ac54-77f6-498b-8c41-275a8bad87a2_rwc_42x0x662x497x662.jpg?h=d1ab0173e711d93ab09c5345c26a9ec0 2560w, https://pro2-bar-s3-cdn-cf.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/ba84ac54-77f6-498b-8c41-275a8bad87a2_rwc_42x0x662x497x662.jpg?h=d1ab0173e711d93ab09c5345c26a9ec0 5120w" data-sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, 100vw">
+                                      </div>
+                        </div>
+                      </div>
+                    <div class="details-wrap">
+                      <div class="details">
+                        <div class="details-inner">
+                            <div class="title preserve-whitespace">ENGINEERING PROJECTS</div>
+                            <div class="date">2020</div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a class="project-cover js-project-cover-touch hold-space" href="https://josephstaschiak.myportfolio.com/additional-experience" data-context="pages" data-identity="id:p5f5cf3d06194e73acc11407eda8d515baec06daa6158ebfbb29e8">
+                      <div class="cover-image-wrap">
+                        <div class="cover-image">
+                            <div class="cover cover-normal">
+
+            <img class="cover__img js-lazy" src="./Joseph Staschiak - TECHNICAL SKILLS &amp; QUALIFICATIONS_files/1286095f-6663-40fb-b496-36528248ad8d_carw_4x3x32.jpg" data-src="https://pro2-bar-s3-cdn-cf.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/1286095f-6663-40fb-b496-36528248ad8d_car_4x3.jpg?h=a0e7d8803da77b21fb9a7890a6d0cb02" data-srcset="https://pro2-bar-s3-cdn-cf.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/1286095f-6663-40fb-b496-36528248ad8d_carw_4x3x640.jpg?h=818930aec3c8a966b0fdfc652a3472ad 640w, https://pro2-bar-s3-cdn-cf.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/1286095f-6663-40fb-b496-36528248ad8d_carw_4x3x1280.jpg?h=034059ff5d043abe25e489c8a870f5e5 1280w, https://pro2-bar-s3-cdn-cf.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/1286095f-6663-40fb-b496-36528248ad8d_carw_4x3x1366.jpg?h=105f9e6c9cc86e7145a724cd16ba1fc5 1366w, https://pro2-bar-s3-cdn-cf.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/1286095f-6663-40fb-b496-36528248ad8d_carw_4x3x1920.jpg?h=faf009fc73fbbbccb5e62714a5daa78f 1920w, https://pro2-bar-s3-cdn-cf.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/1286095f-6663-40fb-b496-36528248ad8d_carw_4x3x2560.jpg?h=ca4789e7c8592f01224deb7945e44423 2560w, https://pro2-bar-s3-cdn-cf.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/1286095f-6663-40fb-b496-36528248ad8d_carw_4x3x5120.jpg?h=a7a8795c8187b222944df04aa91c908b 5120w" data-sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, 100vw">
+                                      </div>
+                        </div>
+                      </div>
+                    <div class="details-wrap">
+                      <div class="details">
+                        <div class="details-inner">
+                            <div class="title preserve-whitespace">ABOUT ME</div>
+                            <div class="date">2020</div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a class="project-cover js-project-cover-touch hold-space" href="https://josephstaschiak.myportfolio.com/projects" data-context="pages" data-identity="id:p5f5bcfd04028c66ca1d3861953068894d94518b1e87a0c9492e2f">
+                      <div class="cover-image-wrap">
+                        <div class="cover-image">
+                            <div class="cover cover-normal">
+
+            <img class="cover__img js-lazy" src="./Joseph Staschiak - TECHNICAL SKILLS &amp; QUALIFICATIONS_files/0373501e-830f-4a63-9f06-728569d9af07_rwc_119x0x1758x1319x32.jpg" data-src="https://pro2-bar-s3-cdn-cf6.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/0373501e-830f-4a63-9f06-728569d9af07_rwc_119x0x1758x1319x1758.jpg?h=7c36449d2a348bbe2931847c035f3dbc" data-srcset="https://pro2-bar-s3-cdn-cf6.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/0373501e-830f-4a63-9f06-728569d9af07_rwc_119x0x1758x1319x640.jpg?h=f24df1ad7e23be495389769530c4ba2d 640w, https://pro2-bar-s3-cdn-cf6.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/0373501e-830f-4a63-9f06-728569d9af07_rwc_119x0x1758x1319x1280.jpg?h=2ea3b8ab4a9d53266642cf6477c59e82 1280w, https://pro2-bar-s3-cdn-cf6.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/0373501e-830f-4a63-9f06-728569d9af07_rwc_119x0x1758x1319x1366.jpg?h=00cbe30fe252a35b9c15321d6e619b26 1366w, https://pro2-bar-s3-cdn-cf6.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/0373501e-830f-4a63-9f06-728569d9af07_rwc_119x0x1758x1319x1920.jpg?h=b0a807c5639c8fc8fbff5c7082e7c35c 1920w, https://pro2-bar-s3-cdn-cf6.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/0373501e-830f-4a63-9f06-728569d9af07_rwc_119x0x1758x1319x1758.jpg?h=7c36449d2a348bbe2931847c035f3dbc 2560w, https://pro2-bar-s3-cdn-cf6.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/0373501e-830f-4a63-9f06-728569d9af07_rwc_119x0x1758x1319x1758.jpg?h=7c36449d2a348bbe2931847c035f3dbc 5120w" data-sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, 100vw">
+                                      </div>
+                        </div>
+                      </div>
+                    <div class="details-wrap">
+                      <div class="details">
+                        <div class="details-inner">
+                            <div class="title preserve-whitespace">PROFESSIONAL EXPERIENCE</div>
+                            <div class="date">2020</div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a class="project-cover js-project-cover-touch hold-space" href="https://josephstaschiak.myportfolio.com/about-me" data-context="pages" data-identity="id:p5f9f001c7659a6d00b29889c4e0f9e31c7db3c41f382ba9998619">
+                      <div class="cover-image-wrap">
+                        <div class="cover-image">
+                            <div class="cover cover-normal">
+
+            <img class="cover__img js-lazy" src="./Joseph Staschiak - TECHNICAL SKILLS &amp; QUALIFICATIONS_files/672f2779-2130-456e-b713-d9ffabb87972_rwc_0x26x420x315x32.jpg" data-src="https://pro2-bar-s3-cdn-cf5.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/672f2779-2130-456e-b713-d9ffabb87972_rwc_0x26x420x315x420.jpg?h=1ac24189b038ffc942aaf805b942b1e3" data-srcset="https://pro2-bar-s3-cdn-cf5.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/672f2779-2130-456e-b713-d9ffabb87972_rwc_0x26x420x315x420.jpg?h=1ac24189b038ffc942aaf805b942b1e3 640w, https://pro2-bar-s3-cdn-cf5.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/672f2779-2130-456e-b713-d9ffabb87972_rwc_0x26x420x315x420.jpg?h=1ac24189b038ffc942aaf805b942b1e3 1280w, https://pro2-bar-s3-cdn-cf5.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/672f2779-2130-456e-b713-d9ffabb87972_rwc_0x26x420x315x420.jpg?h=1ac24189b038ffc942aaf805b942b1e3 1366w, https://pro2-bar-s3-cdn-cf5.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/672f2779-2130-456e-b713-d9ffabb87972_rwc_0x26x420x315x420.jpg?h=1ac24189b038ffc942aaf805b942b1e3 1920w, https://pro2-bar-s3-cdn-cf5.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/672f2779-2130-456e-b713-d9ffabb87972_rwc_0x26x420x315x420.jpg?h=1ac24189b038ffc942aaf805b942b1e3 2560w, https://pro2-bar-s3-cdn-cf5.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/672f2779-2130-456e-b713-d9ffabb87972_rwc_0x26x420x315x420.jpg?h=1ac24189b038ffc942aaf805b942b1e3 5120w" data-sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, 100vw">
+                                      </div>
+                        </div>
+                      </div>
+                    <div class="details-wrap">
+                      <div class="details">
+                        <div class="details-inner">
+                            <div class="title preserve-whitespace">ADDITIONAL EXPERIENCES</div>
+                            <div class="date">2020</div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+            </div>
+          </section>
+        <section class="back-to-top" data-hover-hint="backToTop">
+          <a href="https://josephstaschiak.myportfolio.com/technical-skills-and-qualifications#"><span class="arrow">↑</span><span class="preserve-whitespace">Back to Top</span></a>
+        </section>
+        <a class="back-to-top-fixed js-back-to-top back-to-top-fixed-with-panel" data-hover-hint="backToTop" data-hover-hint-placement="top-start" href="https://josephstaschiak.myportfolio.com/technical-skills-and-qualifications#">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 26 26" style="enable-background:new 0 0 26 26;" xml:space="preserve" class="icon icon-back-to-top">
+          <g>
+            <path d="M13.8,1.3L21.6,9c0.1,0.1,0.1,0.3,0.2,0.4c0.1,0.1,0.1,0.3,0.1,0.4s0,0.3-0.1,0.4c-0.1,0.1-0.1,0.3-0.3,0.4
+              c-0.1,0.1-0.2,0.2-0.4,0.3c-0.2,0.1-0.3,0.1-0.4,0.1c-0.1,0-0.3,0-0.4-0.1c-0.2-0.1-0.3-0.2-0.4-0.3L14.2,5l0,19.1
+              c0,0.2-0.1,0.3-0.1,0.5c0,0.1-0.1,0.3-0.3,0.4c-0.1,0.1-0.2,0.2-0.4,0.3c-0.1,0.1-0.3,0.1-0.5,0.1c-0.1,0-0.3,0-0.4-0.1
+              c-0.1-0.1-0.3-0.1-0.4-0.3c-0.1-0.1-0.2-0.2-0.3-0.4c-0.1-0.1-0.1-0.3-0.1-0.5l0-19.1l-5.7,5.7C6,10.8,5.8,10.9,5.7,11
+              c-0.1,0.1-0.3,0.1-0.4,0.1c-0.2,0-0.3,0-0.4-0.1c-0.1-0.1-0.3-0.2-0.4-0.3c-0.1-0.1-0.1-0.2-0.2-0.4C4.1,10.2,4,10.1,4.1,9.9
+              c0-0.1,0-0.3,0.1-0.4c0-0.1,0.1-0.3,0.3-0.4l7.7-7.8c0.1,0,0.2-0.1,0.2-0.1c0,0,0.1-0.1,0.2-0.1c0.1,0,0.2,0,0.2-0.1
+              c0.1,0,0.1,0,0.2,0c0,0,0.1,0,0.2,0c0.1,0,0.2,0,0.2,0.1c0.1,0,0.1,0.1,0.2,0.1C13.7,1.2,13.8,1.2,13.8,1.3z"></path>
+          </g>
+          </svg>
+        </a>
+  </div>
+              <footer class="site-footer" data-hover-hint="footer">
+                <div class="footer-text">
+                  Mobile: (419) 348-7702 | Email: Staschiak.7@osu.edu | Page developed by Joseph Staschiak
+                </div>
+              </footer>
+        </main>
+      </div>
+    </div>
+  </div>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"e7fb1b89a0","applicationID":"750147145","transactionName":"ZwZaYkJVDERXUxULCV5Me0NDQA1aGWsmJzJtQxdtS0QDQ14KT0gbbQ==","queueTime":0,"applicationTime":19,"atts":"S0FNFApPHxsUUUNYHU0e","errorBeacon":"bam-cell.nr-data.net","agent":""}</script>
+<script type="text/javascript">
+  // fix for Safari's back/forward cache
+  window.onpageshow = function(e) {
+    if (e.persisted) { window.location.reload(); }
+  };
+</script>
+  <script type="text/javascript">var __config__ = {"page_id":"p5f5d002b8b0270cdd87af88c3220b129bdf8e25777ab4a4f2b133","theme":{"name":"andreas"},"pageTransition":true,"linkTransition":true,"disableDownload":true,"localizedValidationMessages":{"required":"This field is required","Email":"This field must be a valid email address"},"lightbox":{"enabled":true,"color":{"opacity":0.94,"hex":"#fff"}},"cookie_banner":{"enabled":false}};</script>
+  <script type="text/javascript" src="./Joseph Staschiak - TECHNICAL SKILLS &amp; QUALIFICATIONS_files/translations"></script>
+  <script type="text/javascript" src="./Joseph Staschiak - TECHNICAL SKILLS &amp; QUALIFICATIONS_files/main.js.download"></script><div class="js-lightbox-wrap offscreen" id="lightbox-wrap">
+    
+  <div class="js-blocking" id="lightbox-blocking">
+    <span class="lightbox-spinner"></span>
+  </div>
+
+    <div class="js-lightbox-inner-wrap" id="lightbox-inner-wrap">
+      <div class="js-img-wrap" id="lightbox-img-wrap">
+        
+  <div class="lightbox-extra control prev js-control js-prev">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" width="60" height="60" viewBox="0 0 60 60" xml:space="preserve">
+      <circle class="lightbox-icon-bg" cx="30" cy="30" r="30"></circle>
+      <path class="lightbox-icon-arrow" d="M36.8,36.4L30.3,30l6.5-6.4l-3.5-3.4l-10,9.8l10,9.8L36.8,36.4z"></path>
+    </svg>
+  </div>
+
+        
+  <div class="lightbox-extra control next js-control js-next">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" width="60" height="60" viewBox="0 0 60 60" xml:space="preserve">
+      <circle class="lightbox-icon-bg" cx="30" cy="30" r="30"></circle>
+      <path class="lightbox-icon-arrow" d="M24.2,23.5l6.6,6.5l-6.6,6.5l3.6,3.5L37.8,30l-10.1-9.9L24.2,23.5z"></path>
+    </svg>
+  </div>
+
+        
+  <div class="lightbox-extra control close js-control js-close">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+      <circle class="lightbox-icon-bg" cx="50" cy="50" r="47.5"></circle>
+      <polygon class="lightbox-icon-close" points="64.5,39.8 60.2,35.5 50,45.7 39.8,35.5 35.5,39.8 45.7,50 35.5,60.2 39.8,64.5 50,54.3 60.2,64.5 64.5,60.2 54.3,50"></polygon>
+    </svg>
+  </div>
+
+        <div class="lightbox-contents js-contents"></div>
+      </div>
+    </div>
+  </div>
+
+</body></html>

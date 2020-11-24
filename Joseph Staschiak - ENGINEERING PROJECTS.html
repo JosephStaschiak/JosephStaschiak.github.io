@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)https://josephstaschiak.myportfolio.com/engineering-projects -->
+<html lang="en-US" class="wf-fbft-n4-active wf-fbft-n5-active wf-fbft-n7-active wf-active"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script type="text/javascript" src="./Joseph Staschiak - ENGINEERING PROJECTS_files/e7fb1b89a0"></script><script src="./Joseph Staschiak - ENGINEERING PROJECTS_files/nr-1184.min.js.download"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"e7fb1b89a0",applicationID:"750147145"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,y=["click","keydown","mousedown","pointerdown","touchstart"];y.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?f(e,c,o):o()}function n(n,r,i,o){if(!p.aborted||o){e&&e(n,r,i);for(var a=t(i),c=v(n),f=c.length,u=0;u<f;u++)c[u].apply(a,r);var d=s[w[n]];return d&&d.push([b,n,r,a]),a}}function l(e,t){h[e]=v(e).concat(t)}function m(e,t){var n=h[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return h[e]||[]}function g(e){return d[e]=d[e]||i(n)}function y(e,t){u(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var h={},w={},b={on:l,addEventListener:l,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:y,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var c="nr@context",f=e("gos"),u=e(6),s={},d={},p=t.exports=i();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!E++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(h,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var y=""+location,h={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1184.min.js"},w=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:y,features:{},xhrWrappable:w,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var E=0},{}],"wrap-function":[function(e,t,n){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(7),a="nr@original",c=Object.prototype.hasOwnProperty,f=!1;t.exports=function(e,t){function n(e,t,n,i){function nrWrapper(){var r,a,c,f;try{a=this,r=o(arguments),c="function"==typeof n?n(r,a):n||{}}catch(u){p([u,"",[r,a,i],c])}s(t+"start",[r,a,i],c);try{return f=e.apply(a,r)}catch(d){throw s(t+"err",[r,a,d],c),d}finally{s(t+"end",[r,a,f],c)}}return r(e)?e:(t||(t=""),nrWrapper[a]=e,d(e,nrWrapper),nrWrapper)}function u(e,t,i,o){i||(i="");var a,c,f,u="-"===i.charAt(0);for(f=0;f<t.length;f++)c=t[f],a=e[c],r(a)||(e[c]=n(a,u?c+i:i,o,c))}function s(n,r,i){if(!f||t){var o=f;f=!0;try{e.emit(n,r,i,t)}catch(a){p([a,n,r,i])}f=o}}function d(e,t){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(e);return n.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(r){p([r])}for(var i in e)c.call(e,i)&&(t[i]=e[i]);return t}function p(t){try{e.emit("internal-error",t)}catch(n){}}return e||(e=i),n.inPlace=u,n.flag=a,n}},{}]},{},["loader"]);</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="Projects and clubs relative to my major and career aspirations">
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:site" content="@AdobePortfolio">
+      <meta property="og:title" content="Joseph Staschiak - ENGINEERING PROJECTS">
+      <meta property="og:description" content="Projects and clubs relative to my major and career aspirations">
+      <meta property="og:image" content="https://pro2-bar-s3-cdn-cf2.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/3cab993c-ac89-440f-aa31-91302e49f049_rwc_0x0x780x996x780.jpg?h=25f5fcb5e666600894f7651ce0651bfe">
+      <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAADUExURUxpcU3H2DoAAAABdFJOUwBA5thmAAAADElEQVQI12NgIA0AAAAwAAHHqoWOAAAAAElFTkSuQmCC">
+        <link rel="apple-touch-icon" href="https://pro2-bar-s3-cdn-cf2.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/3dfeaa4b-c639-4218-be22-cc7e58039a89_carw_1x1x180.jpg?h=285a5214baa87ac591e6d9903745fb2c">
+      <link rel="stylesheet" href="./Joseph Staschiak - ENGINEERING PROJECTS_files/main.css" type="text/css">
+      <link rel="stylesheet" href="./Joseph Staschiak - ENGINEERING PROJECTS_files/717829a48b5fad64747b7bf2f577ae731605833593.css" type="text/css">
+    <link rel="canonical" href="https://josephstaschiak.myportfolio.com/engineering-projects">
+      <title>Joseph Staschiak - ENGINEERING PROJECTS</title>
+    <script type="text/javascript" src="./Joseph Staschiak - ENGINEERING PROJECTS_files/k5fcb66NzLpnlQObBCv5STM-yVitxgiEajAOiBt0m8vfen3gfHYEBsJzwD9oFDIDWhJhZ2bX5QqoFQByFeIhjQ8KjhJuZRSoZRSXjRgywAIuw2ZRw2Mawej-mkG0dW83da4XZcNC-Av0jhNlOfG0SY4zwKuh-AmaOcuoSeNki.download" async="" onload="
+    try {
+      window.Typekit.load();
+    } catch (e) {
+      console.warn(&#39;Typekit not loaded.&#39;);
+    }
+    "></script><style type="text/css">@font-face{font-family:fbft;src:url(https://use.typekit.net/af/9cb78a/0000000000000000000118ad/27/l?subset_id=2&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/9cb78a/0000000000000000000118ad/27/d?subset_id=2&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/9cb78a/0000000000000000000118ad/27/a?subset_id=2&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-display:auto;}@font-face{font-family:fbft;src:url(https://use.typekit.net/af/2e6f07/000000000000000000011ce6/27/l?subset_id=2&fvd=n5&v=3) format("woff2"),url(https://use.typekit.net/af/2e6f07/000000000000000000011ce6/27/d?subset_id=2&fvd=n5&v=3) format("woff"),url(https://use.typekit.net/af/2e6f07/000000000000000000011ce6/27/a?subset_id=2&fvd=n5&v=3) format("opentype");font-weight:500;font-style:normal;font-display:auto;}@font-face{font-family:fbft;src:url(https://use.typekit.net/af/b825af/0000000000000000000118b1/27/l?subset_id=2&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/b825af/0000000000000000000118b1/27/d?subset_id=2&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/b825af/0000000000000000000118b1/27/a?subset_id=2&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-display:auto;}</style>
+<style type="text/css"></style></head>
+  <body class="has-touch link-transition disable-download">  <div class="page-background-video page-background-video-with-panel">
+  </div>
+  <div class="js-responsive-nav">
+    <div class="responsive-nav has-social">
+      <div class="responsive-nav__contents">
+        <div class="close-responsive-click-area js-close-responsive-nav">
+          <div class="close-responsive-button"></div>
+        </div>
+            <nav class="nav-container" data-hover-hint="nav" data-hover-hint-placement="bottom-start">
+      <div class="page-title">
+        <a href="https://josephstaschiak.myportfolio.com/lessons-learnt-1">Lessons Learnt</a>
+      </div>
+      <div class="page-title">
+        <a href="https://josephstaschiak.myportfolio.com/welcome">Welcome!</a>
+      </div>
+                <div class="gallery-title"><a href="https://josephstaschiak.myportfolio.com/home">Portfolio Home</a></div>
+      <div class="page-title">
+        <a href="https://josephstaschiak.myportfolio.com/contact">Contact</a>
+      </div>
+            </nav>
+          <div class="social pf-nav-social" data-context="theme.nav" data-hover-hint="navSocialIcons" data-hover-hint-placement="bottom-start">
+            <ul>
+            </ul>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="site-wrap cfix">
+    <div class="site-container">
+      <div class="site-content e2e-site-content">
+          <header class="site-header js-site-header " data-context="theme.nav" data-hover-hint="nav" data-hover-hint-placement="top-start">
+              <nav class="nav-container" data-hover-hint="nav" data-hover-hint-placement="bottom-start">
+      <div class="page-title">
+        <a href="https://josephstaschiak.myportfolio.com/lessons-learnt-1">Lessons Learnt</a>
+      </div>
+      <div class="page-title">
+        <a href="https://josephstaschiak.myportfolio.com/welcome">Welcome!</a>
+      </div>
+                <div class="gallery-title"><a href="https://josephstaschiak.myportfolio.com/home">Portfolio Home</a></div>
+      <div class="page-title">
+        <a href="https://josephstaschiak.myportfolio.com/contact">Contact</a>
+      </div>
+              </nav>
+              <div class="logo-wrap" data-context="theme.logo.header" data-hover-hint="logo" data-hover-hint-placement="bottom-start">
+                <div class="logo e2e-site-logo-text logo-text  ">
+                    <a href="https://josephstaschiak.myportfolio.com/home" class="preserve-whitespace">JOSEPH JACOB STASCHIAK</a>
+
+                </div>
+              </div>
+              <div class="social pf-nav-social" data-context="theme.nav" data-hover-hint="navSocialIcons" data-hover-hint-placement="bottom-start">
+                <ul>
+                </ul>
+              </div>
+              <div class="hamburger-click-area js-hamburger">
+                <div class="hamburger">
+                  <i></i>
+                  <i></i>
+                  <i></i>
+                </div>
+              </div>
+          </header>
+        <main>
+  <div class="page-container js-site-wrap" data-context="page.page.container" data-hover-hint="pageContainer">
+    <section class="page standard-modules">
+        <header class="page-header content" data-context="pages" data-identity="id:p5f5bd85fcd842d421d08ab3a303d8329884ea1dc4b94dec2c251b" data-hover-hint="pageHeader" data-hover-hint-id="p5f5bd85fcd842d421d08ab3a303d8329884ea1dc4b94dec2c251b">
+            <h1 class="title preserve-whitespace e2e-site-logo-text">ENGINEERING PROJECTS</h1>
+            <p class="description">Projects and clubs relative to my major and career aspirations</p>
+        </header>
+      <div class="page-content js-page-content" data-context="pages" data-identity="id:p5f5bd85fcd842d421d08ab3a303d8329884ea1dc4b94dec2c251b">
+        <div id="project-canvas" class="js-project-modules modules content">
+          <div id="project-modules">
+              
+              <div class="project-module module image project-module-image js-js-project-module" style="  padding-top: px;
+  padding-bottom: px;
+">
+
+  
+
+  
+     <div class="js-lightbox lightbox-link" data-src="https://pro2-bar-s3-cdn-cf2.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/358777e2-168d-4c41-ad24-bf07e0f725d2.jpg?h=3f52a7dd19fd736afc14503db72f18b3">
+           <img class="js-lazy e2e-site-project-module-image image-loaded" src="./Joseph Staschiak - ENGINEERING PROJECTS_files/358777e2-168d-4c41-ad24-bf07e0f725d2_rw_600.jpg" width="301" srcset="https://pro2-bar-s3-cdn-cf2.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/358777e2-168d-4c41-ad24-bf07e0f725d2_rw_600.jpg?h=5e257e1d88e0d7e097c5429bee957a9e 301w," sizes="(max-width: 301px) 100vw, 301px">
+     </div>
+  
+
+    <div class="project-module module-caption-container js-caption-container align-left">
+      <div class="rich-text module-caption js-text-editable"><div>Rolls-Royce AE1107F engine to support FLRAA Bell V-280 Tilt-rotor</div><div>During my second rotation at Rolls-Royce while acting under System Engineering, I became a Design Integration expert while using Cameo SysML Model Based System Engineering (MBSE). I became highly proficient with the technical tool as I was entrusted to take MBSE structure further than ever in Model Based Design (MBD) history. I also developed a product transportation system with suppliers, customers, and internally; as well as an assembly sequence which was developed to support VR maintenance for the engine once in full production if the contract is received for Bell.</div></div>
+    </div>
+</div>
+
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              <div class="project-module module image project-module-image js-js-project-module" style="  padding-top: px;
+  padding-bottom: px;
+">
+
+  
+
+  
+     <div class="js-lightbox lightbox-link" data-src="https://pro2-bar-s3-cdn-cf.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/12b52b0d-b186-449b-a717-ba588cddb399.jpg?h=6122a3af9a50e48935110d4e1cdc3580">
+           <img class="js-lazy e2e-site-project-module-image image-loaded" src="./Joseph Staschiak - ENGINEERING PROJECTS_files/12b52b0d-b186-449b-a717-ba588cddb399_rw_600.jpg" width="278" srcset="https://pro2-bar-s3-cdn-cf.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/12b52b0d-b186-449b-a717-ba588cddb399_rw_600.jpg?h=f9f6abf266ae500ad34159012bddd6ab 278w," sizes="(max-width: 278px) 100vw, 278px">
+     </div>
+  
+
+    <div class="project-module module-caption-container js-caption-container align-left">
+      <div class="rich-text module-caption js-text-editable"><div>Rolls-Royce Trent 700 engine</div><div>During my first rotation at Rolls-Royce while acting under Engineering for Service, I investigated aftermarket savings for the Trent engine family. These engines produce &gt;70,000lbs of thrust per engine. While acting in after market savings I was able to complete 9 Request for Manual Revisions (RMRs). Each manual revision is projected to obtain $XXX,XXX worth of savings for Rolls-Royce.&nbsp;</div></div>
+    </div>
+</div>
+
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              <div class="project-module module image project-module-image js-js-project-module" style="  padding-top: 0px;
+  padding-bottom: 30px;
+  width: 46%;
+  float: center;
+  clear: both;
+">
+
+  
+
+  
+     <div class="js-lightbox lightbox-link" data-src="https://pro2-bar-s3-cdn-cf5.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/6ebb457c-6bc1-4671-a5f6-c812ca5163f8.jpg?h=63d5e2b02be48ea8a7bcde6ae75754e0">
+           <img class="js-lazy e2e-site-project-module-image image-loaded" src="https://pro2-bar-s3-cdn-cf5.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/6ebb457c-6bc1-4671-a5f6-c812ca5163f8_rw_1200.jpg?h=00cdc4f66942085978d479c5c7d2a418" width="800" srcset="https://pro2-bar-s3-cdn-cf5.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/6ebb457c-6bc1-4671-a5f6-c812ca5163f8_rw_600.jpg?h=21fb4dbfdb65ff68820166be1b2ff81f 600w,https://pro2-bar-s3-cdn-cf5.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/6ebb457c-6bc1-4671-a5f6-c812ca5163f8_rw_1200.jpg?h=00cdc4f66942085978d479c5c7d2a418 800w," sizes="(max-width: 800px) 100vw, 800px">
+     </div>
+  
+
+    <div class="project-module module-caption-container js-caption-container align-left">
+      <div class="rich-text module-caption js-text-editable"><div>Dual Axis Solar Tracker</div><div>Optimized solar energy capabilities by manipulating photoresistor readings to maneuver a solar panel to a strategic location with the most direct path of sunlight.&nbsp;The solar tracker would rotate 360 degrees on the horizontal axis using a stepper motor and 180 degrees on the vertical axis using a servo motor.</div><div>Each of the 4 strategically placed photo resistors would increase the its resistance when more positive ions from direct sunlight were received. A for-if-loop algorithm was created which would rotate vertically and horizontally depending on the direct path of sunlight.</div><div><span><span><span><span><span style="font-size:19.0pt"><span style="font-family:&quot;Goudy Old Style&quot;"><span style="color:#f4edd8"><span><span><a data-cke-saved-href="https://www.youtube.com/watch?v=ZQHXGWUM_-A&amp;t=1s" href="https://www.youtube.com/watch?v=ZQHXGWUM_-A&amp;t=1s">https://www.youtube.com/watch?v=ZQHXGWUM_-A&amp;t=1s</a></span></span></span></span></span> </span></span></span></span>&nbsp;</div></div>
+    </div>
+</div>
+
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              <div class="project-module module image project-module-image js-js-project-module" style="  padding-top: 0px;
+  padding-bottom: 20px;
+  width: 32%;
+  float: center;
+  clear: both;
+">
+
+  
+
+  
+     <div class="js-lightbox lightbox-link" data-src="https://pro2-bar-s3-cdn-cf.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/be2b1254-ad16-4ee1-92a9-eef44bf6cb24.jpg?h=5468dec4f43cec919e9d89d7cfc45c22">
+           <img class="js-lazy e2e-site-project-module-image image-loaded" src="https://pro2-bar-s3-cdn-cf.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/be2b1254-ad16-4ee1-92a9-eef44bf6cb24_rw_1200.jpg?h=44a14b0520d39537e8cbff54ccb11773" width="1000" srcset="https://pro2-bar-s3-cdn-cf.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/be2b1254-ad16-4ee1-92a9-eef44bf6cb24_rw_600.jpg?h=c230269cba42ffe6fae6ef26f8c797cb 600w,https://pro2-bar-s3-cdn-cf.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/be2b1254-ad16-4ee1-92a9-eef44bf6cb24_rw_1200.jpg?h=44a14b0520d39537e8cbff54ccb11773 1000w," sizes="(max-width: 1000px) 100vw, 1000px">
+     </div>
+  
+
+    <div class="project-module module-caption-container js-caption-container align-left">
+      <div class="rich-text module-caption js-text-editable"><div>Buckeye Space Launch Initiative (BSLI)</div><div>Ohio State based club which launches three rockets: 10K ft rocket, 30K ft rocket, Liquid fuel rocket (62 mile)</div><div>The 10K and 30K rockets are in the implementation stages which actively compete in national competitions with NASA and Space Port America. The Liquid High Altitude rocket is in the development stages which the goal to use liquid fuel on the 30K rocket by year 2022.&nbsp;</div><div><span><span><span><span><span style="font-size:19.0pt"><span style="font-family:&quot;Goudy Old Style&quot;"><span style="color:#f4edd8"><span><span><a data-cke-saved-href="https://u.osu.edu/rocket/" href="https://u.osu.edu/rocket/">https://u.osu.edu/rocket/</a></span></span></span></span></span></span></span></span></span></div></div>
+    </div>
+</div>
+
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              <div class="project-module module image project-module-image js-js-project-module" style="  padding-top: 0px;
+  padding-bottom: 20px;
+  width: 42%;
+  float: center;
+  clear: both;
+">
+
+  
+
+  
+     <div class="js-lightbox lightbox-link" data-src="https://pro2-bar-s3-cdn-cf1.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/c6b0ee26-0f82-4430-90be-e1d51bad0799.jpg?h=262245af9173da2935ac173f4d7fd9cd">
+           <img class="js-lazy e2e-site-project-module-image image-loaded" src="https://pro2-bar-s3-cdn-cf1.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/c6b0ee26-0f82-4430-90be-e1d51bad0799_rw_1200.jpg?h=f997df62955913ed1bf2038684759161" width="1200" srcset="https://pro2-bar-s3-cdn-cf1.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/c6b0ee26-0f82-4430-90be-e1d51bad0799_rw_600.jpg?h=6e5fc7f054a0ebc5a528926604bb0a25 600w,https://pro2-bar-s3-cdn-cf1.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/c6b0ee26-0f82-4430-90be-e1d51bad0799_rw_1200.jpg?h=f997df62955913ed1bf2038684759161 1200w," sizes="(max-width: 1200px) 100vw, 1200px">
+     </div>
+  
+
+    <div class="project-module module-caption-container js-caption-container align-left">
+      <div class="rich-text module-caption js-text-editable"><div>OSU chemE Car</div><div>Develop operational car powered by chemical reactions and mechanical mechanisms. The goal is to optimize vehicle efficiency and accuracy through research and experimentation. I spent my time on the chassis design team where I used my skills in SolidWorks design to build a gearbox cover which was light weight, considered safety for the user and the mechanism, fit within design constraints,&nbsp;and was aerodynamic. The team later competes on a national level with other colleges such as Harvard and MIT (both of which we beat last year).</div><div><span><span><span><span><span style="font-size:19.0pt"><span style="font-family:&quot;Goudy Old Style&quot;"><span style="color:#f4edd8"><span><span><a data-cke-saved-href="http://org.osu.edu/aiche/programs/cheme-car/" href="http://org.osu.edu/aiche/programs/cheme-car/">http://org.osu.edu/aiche/programs/cheme-car/</a></span></span></span></span></span></span></span></span></span></div></div>
+    </div>
+</div>
+
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              <div class="project-module module image project-module-image js-js-project-module" style="  padding-top: 0px;
+  padding-bottom: 20px;
+  width: 45%;
+  float: center;
+  clear: both;
+">
+
+  
+
+  
+     <div class="js-lightbox lightbox-link" data-src="https://pro2-bar-s3-cdn-cf.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/13d021ee-7ada-45a8-9b2c-e69c9c7e2f5f.jpg?h=40ca78023ef0a6ebd8e701df03c7632a">
+           <img class="js-lazy e2e-site-project-module-image" src="https://pro2-bar-s3-cdn-cf.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/13d021ee-7ada-45a8-9b2c-e69c9c7e2f5f_rw_1920.jpg?h=c52d137807ea36a4914a1fff13189861" width="1280" height="0" style="padding-bottom: 56.17%; background: rgba(0, 0, 0, 0.03)" srcset="https://pro2-bar-s3-cdn-cf.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/13d021ee-7ada-45a8-9b2c-e69c9c7e2f5f_rw_600.jpg?h=5fe7870d8b722f1a79146d8da386df34 600w,https://pro2-bar-s3-cdn-cf.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/13d021ee-7ada-45a8-9b2c-e69c9c7e2f5f_rw_1200.jpg?h=19e52b646a48886eda3604ec68cee31a 1200w,https://pro2-bar-s3-cdn-cf.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/13d021ee-7ada-45a8-9b2c-e69c9c7e2f5f_rw_1920.jpg?h=c52d137807ea36a4914a1fff13189861 1280w," sizes="(max-width: 1280px) 100vw, 1280px">
+     </div>
+  
+
+    <div class="project-module module-caption-container js-caption-container align-left">
+      <div class="rich-text module-caption js-text-editable"><div>Advanced Energy Vehicle (AEV) Project</div><div>Led engineering team in design, research, and development of energy efficient monorail vehicle. I was responsible to oversee&nbsp;and communicate&nbsp;information as the team worked together to further advance the AEV design. The team later competed in a state-wide competition in which our design was able to place 2nd due to its efficiency and unique design.</div><div><span><span><span><span><span style="font-size:19.0pt"><span style="font-family:&quot;Goudy Old Style&quot;"><span style="color:#f4edd8"><span><span><a data-cke-saved-href="https://www.youtube.com/watch?v=NBWkudQrWr0" href="https://www.youtube.com/watch?v=NBWkudQrWr0">https://www.youtube.com/watch?v=NBWkudQrWr0</a></span></span></span></span></span></span></span></span></span></div></div>
+    </div>
+</div>
+
+              
+              
+              
+              
+              
+              
+              
+              
+          </div>
+        </div>
+      </div>
+    </section>
+          <section class="other-projects" data-context="page.page.other_pages" data-hover-hint="otherPages">
+            <div class="title-wrapper">
+              <div class="title-container">
+                  <h3 class="other-projects-title preserve-whitespace">You may also like</h3>
+              </div>
+            </div>
+            <div class="project-covers">
+                  <a class="project-cover js-project-cover-touch hold-space" href="https://josephstaschiak.myportfolio.com/projects" data-context="pages" data-identity="id:p5f5bcfd04028c66ca1d3861953068894d94518b1e87a0c9492e2f">
+                      <div class="cover-image-wrap">
+                        <div class="cover-image">
+                            <div class="cover cover-normal">
+
+            <img class="cover__img js-lazy" src="https://pro2-bar-s3-cdn-cf6.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/0373501e-830f-4a63-9f06-728569d9af07_rwc_119x0x1758x1319x1758.jpg?h=7c36449d2a348bbe2931847c035f3dbc" srcset="https://pro2-bar-s3-cdn-cf6.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/0373501e-830f-4a63-9f06-728569d9af07_rwc_119x0x1758x1319x640.jpg?h=f24df1ad7e23be495389769530c4ba2d 640w, https://pro2-bar-s3-cdn-cf6.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/0373501e-830f-4a63-9f06-728569d9af07_rwc_119x0x1758x1319x1280.jpg?h=2ea3b8ab4a9d53266642cf6477c59e82 1280w, https://pro2-bar-s3-cdn-cf6.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/0373501e-830f-4a63-9f06-728569d9af07_rwc_119x0x1758x1319x1366.jpg?h=00cbe30fe252a35b9c15321d6e619b26 1366w, https://pro2-bar-s3-cdn-cf6.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/0373501e-830f-4a63-9f06-728569d9af07_rwc_119x0x1758x1319x1920.jpg?h=b0a807c5639c8fc8fbff5c7082e7c35c 1920w, https://pro2-bar-s3-cdn-cf6.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/0373501e-830f-4a63-9f06-728569d9af07_rwc_119x0x1758x1319x1758.jpg?h=7c36449d2a348bbe2931847c035f3dbc 2560w, https://pro2-bar-s3-cdn-cf6.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/0373501e-830f-4a63-9f06-728569d9af07_rwc_119x0x1758x1319x1758.jpg?h=7c36449d2a348bbe2931847c035f3dbc 5120w" sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, 100vw">
+                                      </div>
+                        </div>
+                      </div>
+                    <div class="details-wrap">
+                      <div class="details">
+                        <div class="details-inner">
+                            <div class="title preserve-whitespace">PROFESSIONAL EXPERIENCE</div>
+                            <div class="date">2020</div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a class="project-cover js-project-cover-touch hold-space" href="https://josephstaschiak.myportfolio.com/additional-experience" data-context="pages" data-identity="id:p5f5cf3d06194e73acc11407eda8d515baec06daa6158ebfbb29e8">
+                      <div class="cover-image-wrap">
+                        <div class="cover-image">
+                            <div class="cover cover-normal">
+
+            <img class="cover__img js-lazy" src="https://pro2-bar-s3-cdn-cf.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/1286095f-6663-40fb-b496-36528248ad8d_car_4x3.jpg?h=a0e7d8803da77b21fb9a7890a6d0cb02" srcset="https://pro2-bar-s3-cdn-cf.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/1286095f-6663-40fb-b496-36528248ad8d_carw_4x3x640.jpg?h=818930aec3c8a966b0fdfc652a3472ad 640w, https://pro2-bar-s3-cdn-cf.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/1286095f-6663-40fb-b496-36528248ad8d_carw_4x3x1280.jpg?h=034059ff5d043abe25e489c8a870f5e5 1280w, https://pro2-bar-s3-cdn-cf.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/1286095f-6663-40fb-b496-36528248ad8d_carw_4x3x1366.jpg?h=105f9e6c9cc86e7145a724cd16ba1fc5 1366w, https://pro2-bar-s3-cdn-cf.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/1286095f-6663-40fb-b496-36528248ad8d_carw_4x3x1920.jpg?h=faf009fc73fbbbccb5e62714a5daa78f 1920w, https://pro2-bar-s3-cdn-cf.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/1286095f-6663-40fb-b496-36528248ad8d_carw_4x3x2560.jpg?h=ca4789e7c8592f01224deb7945e44423 2560w, https://pro2-bar-s3-cdn-cf.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/1286095f-6663-40fb-b496-36528248ad8d_carw_4x3x5120.jpg?h=a7a8795c8187b222944df04aa91c908b 5120w" sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, 100vw">
+                                      </div>
+                        </div>
+                      </div>
+                    <div class="details-wrap">
+                      <div class="details">
+                        <div class="details-inner">
+                            <div class="title preserve-whitespace">ABOUT ME</div>
+                            <div class="date">2020</div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a class="project-cover js-project-cover-touch hold-space" href="https://josephstaschiak.myportfolio.com/technical-skills-and-qualifications" data-context="pages" data-identity="id:p5f5d002b8b0270cdd87af88c3220b129bdf8e25777ab4a4f2b133">
+                      <div class="cover-image-wrap">
+                        <div class="cover-image">
+                            <div class="cover cover-normal">
+
+            <img class="cover__img js-lazy" src="https://pro2-bar-s3-cdn-cf3.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/ec4432b0-a915-4334-8c93-47afcf854e60_rwc_76x0x496x372x496.png?h=4abae14064d45a896c470e8fa554634d" srcset="https://pro2-bar-s3-cdn-cf3.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/ec4432b0-a915-4334-8c93-47afcf854e60_rwc_76x0x496x372x640.png?h=2c003cf6bad2921efacf72a1b70aa268 640w, https://pro2-bar-s3-cdn-cf3.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/ec4432b0-a915-4334-8c93-47afcf854e60_rwc_76x0x496x372x496.png?h=4abae14064d45a896c470e8fa554634d 1280w, https://pro2-bar-s3-cdn-cf3.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/ec4432b0-a915-4334-8c93-47afcf854e60_rwc_76x0x496x372x496.png?h=4abae14064d45a896c470e8fa554634d 1366w, https://pro2-bar-s3-cdn-cf3.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/ec4432b0-a915-4334-8c93-47afcf854e60_rwc_76x0x496x372x496.png?h=4abae14064d45a896c470e8fa554634d 1920w, https://pro2-bar-s3-cdn-cf3.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/ec4432b0-a915-4334-8c93-47afcf854e60_rwc_76x0x496x372x496.png?h=4abae14064d45a896c470e8fa554634d 2560w, https://pro2-bar-s3-cdn-cf3.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/ec4432b0-a915-4334-8c93-47afcf854e60_rwc_76x0x496x372x496.png?h=4abae14064d45a896c470e8fa554634d 5120w" sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, 100vw">
+                                      </div>
+                        </div>
+                      </div>
+                    <div class="details-wrap">
+                      <div class="details">
+                        <div class="details-inner">
+                            <div class="title preserve-whitespace">TECHNICAL SKILLS &amp; QUALIFICATIONS</div>
+                            <div class="date">2020</div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a class="project-cover js-project-cover-touch hold-space" href="https://josephstaschiak.myportfolio.com/about-me" data-context="pages" data-identity="id:p5f9f001c7659a6d00b29889c4e0f9e31c7db3c41f382ba9998619">
+                      <div class="cover-image-wrap">
+                        <div class="cover-image">
+                            <div class="cover cover-normal">
+
+            <img class="cover__img js-lazy" src="https://pro2-bar-s3-cdn-cf5.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/672f2779-2130-456e-b713-d9ffabb87972_rwc_0x26x420x315x420.jpg?h=1ac24189b038ffc942aaf805b942b1e3" srcset="https://pro2-bar-s3-cdn-cf5.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/672f2779-2130-456e-b713-d9ffabb87972_rwc_0x26x420x315x420.jpg?h=1ac24189b038ffc942aaf805b942b1e3 640w, https://pro2-bar-s3-cdn-cf5.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/672f2779-2130-456e-b713-d9ffabb87972_rwc_0x26x420x315x420.jpg?h=1ac24189b038ffc942aaf805b942b1e3 1280w, https://pro2-bar-s3-cdn-cf5.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/672f2779-2130-456e-b713-d9ffabb87972_rwc_0x26x420x315x420.jpg?h=1ac24189b038ffc942aaf805b942b1e3 1366w, https://pro2-bar-s3-cdn-cf5.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/672f2779-2130-456e-b713-d9ffabb87972_rwc_0x26x420x315x420.jpg?h=1ac24189b038ffc942aaf805b942b1e3 1920w, https://pro2-bar-s3-cdn-cf5.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/672f2779-2130-456e-b713-d9ffabb87972_rwc_0x26x420x315x420.jpg?h=1ac24189b038ffc942aaf805b942b1e3 2560w, https://pro2-bar-s3-cdn-cf5.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/672f2779-2130-456e-b713-d9ffabb87972_rwc_0x26x420x315x420.jpg?h=1ac24189b038ffc942aaf805b942b1e3 5120w" sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, 100vw">
+                                      </div>
+                        </div>
+                      </div>
+                    <div class="details-wrap">
+                      <div class="details">
+                        <div class="details-inner">
+                            <div class="title preserve-whitespace">ADDITIONAL EXPERIENCES</div>
+                            <div class="date">2020</div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+            </div>
+          </section>
+        <section class="back-to-top" data-hover-hint="backToTop">
+          <a href="https://josephstaschiak.myportfolio.com/engineering-projects#"><span class="arrow">↑</span><span class="preserve-whitespace">Back to Top</span></a>
+        </section>
+        <a class="back-to-top-fixed js-back-to-top back-to-top-fixed-with-panel" data-hover-hint="backToTop" data-hover-hint-placement="top-start" href="https://josephstaschiak.myportfolio.com/engineering-projects#">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 26 26" style="enable-background:new 0 0 26 26;" xml:space="preserve" class="icon icon-back-to-top">
+          <g>
+            <path d="M13.8,1.3L21.6,9c0.1,0.1,0.1,0.3,0.2,0.4c0.1,0.1,0.1,0.3,0.1,0.4s0,0.3-0.1,0.4c-0.1,0.1-0.1,0.3-0.3,0.4
+              c-0.1,0.1-0.2,0.2-0.4,0.3c-0.2,0.1-0.3,0.1-0.4,0.1c-0.1,0-0.3,0-0.4-0.1c-0.2-0.1-0.3-0.2-0.4-0.3L14.2,5l0,19.1
+              c0,0.2-0.1,0.3-0.1,0.5c0,0.1-0.1,0.3-0.3,0.4c-0.1,0.1-0.2,0.2-0.4,0.3c-0.1,0.1-0.3,0.1-0.5,0.1c-0.1,0-0.3,0-0.4-0.1
+              c-0.1-0.1-0.3-0.1-0.4-0.3c-0.1-0.1-0.2-0.2-0.3-0.4c-0.1-0.1-0.1-0.3-0.1-0.5l0-19.1l-5.7,5.7C6,10.8,5.8,10.9,5.7,11
+              c-0.1,0.1-0.3,0.1-0.4,0.1c-0.2,0-0.3,0-0.4-0.1c-0.1-0.1-0.3-0.2-0.4-0.3c-0.1-0.1-0.1-0.2-0.2-0.4C4.1,10.2,4,10.1,4.1,9.9
+              c0-0.1,0-0.3,0.1-0.4c0-0.1,0.1-0.3,0.3-0.4l7.7-7.8c0.1,0,0.2-0.1,0.2-0.1c0,0,0.1-0.1,0.2-0.1c0.1,0,0.2,0,0.2-0.1
+              c0.1,0,0.1,0,0.2,0c0,0,0.1,0,0.2,0c0.1,0,0.2,0,0.2,0.1c0.1,0,0.1,0.1,0.2,0.1C13.7,1.2,13.8,1.2,13.8,1.3z"></path>
+          </g>
+          </svg>
+        </a>
+  </div>
+              <footer class="site-footer" data-hover-hint="footer">
+                <div class="footer-text">
+                  Mobile: (419) 348-7702 | Email: Staschiak.7@osu.edu | Page developed by Joseph Staschiak
+                </div>
+              </footer>
+        </main>
+      </div>
+    </div>
+  </div>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"e7fb1b89a0","applicationID":"750147145","transactionName":"ZwZaYkJVDERXUxULCV5Me0NDQA1aGWsmJzJtQxdtS0QDQ14KT0gbbQ==","queueTime":0,"applicationTime":15,"atts":"S0FNFApPHxsUUUNYHU0e","errorBeacon":"bam-cell.nr-data.net","agent":""}</script>
+<script type="text/javascript">
+  // fix for Safari's back/forward cache
+  window.onpageshow = function(e) {
+    if (e.persisted) { window.location.reload(); }
+  };
+</script>
+  <script type="text/javascript">var __config__ = {"page_id":"p5f5bd85fcd842d421d08ab3a303d8329884ea1dc4b94dec2c251b","theme":{"name":"andreas"},"pageTransition":true,"linkTransition":true,"disableDownload":true,"localizedValidationMessages":{"required":"This field is required","Email":"This field must be a valid email address"},"lightbox":{"enabled":true,"color":{"opacity":0.94,"hex":"#fff"}},"cookie_banner":{"enabled":false}};</script>
+  <script type="text/javascript" src="./Joseph Staschiak - ENGINEERING PROJECTS_files/translations"></script>
+  <script type="text/javascript" src="./Joseph Staschiak - ENGINEERING PROJECTS_files/main.js.download"></script><div class="js-lightbox-wrap offscreen" id="lightbox-wrap">
+    
+  <div class="js-blocking" id="lightbox-blocking">
+    <span class="lightbox-spinner"></span>
+  </div>
+
+    <div class="js-lightbox-inner-wrap" id="lightbox-inner-wrap">
+      <div class="js-img-wrap" id="lightbox-img-wrap">
+        
+  <div class="lightbox-extra control prev js-control js-prev">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" width="60" height="60" viewBox="0 0 60 60" xml:space="preserve">
+      <circle class="lightbox-icon-bg" cx="30" cy="30" r="30"></circle>
+      <path class="lightbox-icon-arrow" d="M36.8,36.4L30.3,30l6.5-6.4l-3.5-3.4l-10,9.8l10,9.8L36.8,36.4z"></path>
+    </svg>
+  </div>
+
+        
+  <div class="lightbox-extra control next js-control js-next">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" width="60" height="60" viewBox="0 0 60 60" xml:space="preserve">
+      <circle class="lightbox-icon-bg" cx="30" cy="30" r="30"></circle>
+      <path class="lightbox-icon-arrow" d="M24.2,23.5l6.6,6.5l-6.6,6.5l3.6,3.5L37.8,30l-10.1-9.9L24.2,23.5z"></path>
+    </svg>
+  </div>
+
+        
+  <div class="lightbox-extra control close js-control js-close">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+      <circle class="lightbox-icon-bg" cx="50" cy="50" r="47.5"></circle>
+      <polygon class="lightbox-icon-close" points="64.5,39.8 60.2,35.5 50,45.7 39.8,35.5 35.5,39.8 45.7,50 35.5,60.2 39.8,64.5 50,54.3 60.2,64.5 64.5,60.2 54.3,50"></polygon>
+    </svg>
+  </div>
+
+        <div class="lightbox-contents js-contents"><div data-slide-id="3" class="js-slide offscreen"><div class="js-slide-content lightbox-content hidden"><img src="https://pro2-bar-s3-cdn-cf.myportfolio.com/72aa6c8d-dc65-49ca-8e0c-b8ce9747e934/be2b1254-ad16-4ee1-92a9-eef44bf6cb24.jpg?h=5468dec4f43cec919e9d89d7cfc45c22"></div></div></div>
+      </div>
+    </div>
+  </div>
+
+</body></html>
